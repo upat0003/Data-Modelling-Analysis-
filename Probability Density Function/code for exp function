@@ -1,0 +1,15 @@
+# Exp pdf function  exp.pdf <- function(y, v) {    p_y = exp(-exp(-v)*y - v) 
+   
+  p_y  
+}  
+ 
+y <- seq(0, 10, len=1000) # Values of y  p_y_1_1 <- c()  p_y_2_1 <- c()  p_y_2_2 <- c()  
+ 
+for (i in y) {  
+  p_y_1_1 <- c(p_y_1_1, exp.pdf(i, 1)) # Values of p(y) for k = 1 & mu = 1    p_y_2_1 <- c(p_y_2_1, exp.pdf(i, 0.5)) # Values of p(y) for k = 2 & mu = 1    p_y_2_2 <- c(p_y_2_2, exp.pdf(i, 2)) # Values of p(y) for k = 2 & mu = 2  
+}  
+ 
+# Plotting the values of p(y) for every value of y  plot(y, p_y_1_1, type = "l", col="blue", ylab="p(y)", xlim=c(0,11), ylim=c(0,0.7))  lines(y, p_y_2_1, type = "l", col="red")  lines(y, p_y_2_2, type = "l", col="green")  
+ 
+# Legend  
+legend(x=6, y=0.6, legend=c("k=1, mu=1", "k=2, mu=1", "k=2, mu=2"), col=c("blue", "red", "green"), lty=c(1,1,1))  
