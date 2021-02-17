@@ -1,1 +1,38 @@
+#R code: 
+ 
+{   
+  WinLoss = 0 
+  LossWin = 0 
+  WinWin = 0 
+  LossLoss = 0 
+ 
+  for (i in 2:nrow(x1)) 
+  { 
+    if (x1[,"game.result"][i-1] == 1 && x1[,"game.result"][i] == 1) 
+    { 
+      WinWin = WinWin + 1 
+    } 
+    else if (x1[,"game.result"][i-1] == 1 && x1[,"game.result"][i] == 0) 
+    { 
+      WinLoss = WinLoss + 1 
+    } 
+     
+    else if (x1[,"game.result"][i-1] == 0 && x1[,"game.result"][i] == 1) 
+    { 
+      LossWin = LossWin + 1 
+    } 
+     
+    else if (x1[,"game.result"][i-1] == 0 && x1[,"game.result"][i] == 0) 
+    { 
+      LossLoss = LossLoss + 1 
+    }     else {       print("Error") 
+    } 
+  } 
+   
+print(WinWin/67) print(WinLoss/67) print(LossLoss/67) print(LossWin/67) 
+ 
+} 
+ 
+file1 <- read.csv("port.adelaide.csv", header = TRUE) 
+fil1(file1) 
 
