@@ -1,6 +1,6 @@
 # Data Modelling & Statistical Analysis
 
-A collection of statistical modelling, probability and numerical methods projects in R and MATLAB, spanning sports analytics, health prediction, and applied mathematics.
+A collection of statistical modelling and probability projects in R, spanning sports analytics, health prediction, and applied mathematics. (MATLAB numerical methods work has moved to [MATLAB Projects](https://github.com/upat0003/Matlab-Projects).)
 
 ## Projects
 
@@ -14,10 +14,9 @@ A collection of statistical modelling, probability and numerical methods project
 | [Human Kissing Analysis](./Human%20Kissing%20Analysis) | Statistical study of behavioural laterality in human kissing. | R |
 | [Mass Spectrometry Data Smoothing](./Mass%20Spectrometry%20Data%20Smoothing) | Signal smoothing and noise reduction applied to mass spectrometry data. | R |
 | [Probability Density Function](./Probability%20Density%20Function) | Derivation and estimation of probability density functions, including the exponential distribution. | R |
-| [Matlab Project](./Matlab%20Project) | Numerical root-finding methods (bisection, modified secant) implemented and compared in MATLAB. | MATLAB |
 
 Each folder contains the analysis write-up (PDF) alongside the source code and data used.
 
 ## Stack
 
-R (statistical modelling and regression), MATLAB (numerical methods).
+R (statistical modelling and regression).
